@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneiros da Revolução Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-symbol">💻</span>
+            <span>Pioneiros</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#visao-geral">Visão Geral</a>
+            <a href="#desafios">Desafios</a>
+            <a href="#linha-do-tempo">Linha do Tempo</a>
+            <a href="#legado">Legado</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <p class="tagline">A História da Computação Pessoal</p>
+            <h1>Steve Jobs & Bill Gates</h1>
+            <p class="subtitle">Visão, rivalidade e a parceria improvável que moldou o mundo moderno.</p>
+        </section>
+
+        <!-- Visão Geral -->
+        <section id="visao-geral" class="section">
+            <h2 class="section-title">Duas Visões, Um Objetivo</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-badge">Apple</div>
+                    <h3>Steve Jobs</h3>
+                    <p class="card-subtitle">O Mestre do Design e do Incomparável</p>
+                    <p>Focado na perfeição do produto, integração total de hardware e software, e na experiência estética do usuário. Para Jobs, o computador era um instrumento de expressão criativa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-badge">Microsoft</div>
+                    <h3>Bill Gates</h3>
+                    <p class="card-subtitle">O Arquiteto da Onipresença</p>
+                    <p>Compreendeu precocemente o valor e o poder do software em escala global. Sua visão era colocar "um computador em cada mesa e em cada casa", rodando softwares Microsoft.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desafios e Rivalidades -->
+        <section id="desafios" class="section">
+            <h2 class="section-title">Desafios & Controvérsias</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>A Disputa da Interface</h3>
+                    <p>A tensão surgiu quando a Microsoft lançou o Windows 1.0. Jobs acusou Gates de copiar as ideias de interface gráfica desenvolvidas para o Macintosh da Apple.</p>
+                </div>
+                <div class="card">
+                    <h3>Demitido da Própria Empresa</h3>
+                    <p>Em 1985, após disputas internas com a diretoria da Apple, Jobs foi afastado. Ele fundou a NeXT e comprou a Pixar antes do seu épico retorno em 1997.</p>
+                </div>
+                <div class="card">
+                    <h3>Batalhas Antitruste</h3>
+                    <p>Nos anos 90, a Microsoft enfrentou severos processos governamentais devido ao seu domínio do mercado de sistemas operacionais e à integração do Internet Explorer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linha do Tempo Interativa -->
+        <section id="linha-do-tempo" class="section">
+            <h2 class="section-title">Linha do Tempo Interativa</h2>
+            <p class="section-desc">Clique nas datas para explorar os momentos cruciais da história.</p>
+
+            <div class="timeline-nav" id="timeline-nav">
+                <!-- Botões gerados via JS -->
+            </div>
+
+            <div class="timeline-card" id="timeline-card">
+                <div class="timeline-year" id="card-year">1975</div>
+                <h3 class="timeline-title" id="card-title">Carregando...</h3>
+                <p class="timeline-desc" id="card-desc">...</p>
+                <div class="timeline-impact">
+                    <strong>Impacto Histórico:</strong> <span id="card-impact">...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- O Ponto de Virada (Legado) -->
+        <section id="legado" class="section">
+            <div class="featured-card">
+                <h2>1997: A Aliança Inesperada</h2>
+                <p>Com a Apple à beira da falência em 1997, Jobs retornou à empresa e estendeu a mão ao seu antigo rival. A Microsoft investiu US$ 150 milhões na Apple, garantindo a sobrevivência da empresa e permitindo o nascimento de produtos lendários como o iMac, iPod e iPhone.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Projeto Desenvolvido por Leonardo Vinicisos, Leonardo Rodrigues e João Agreda</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
